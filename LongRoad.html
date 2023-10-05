@@ -9,36 +9,42 @@ small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}
 
 body {font-family: Arial, Helvetica, sans-serif;}
 
-/* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none; 
+  position: fixed; 
+  z-index: 0; 
+  padding-top: 50px; 
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
 }
 
-/* Modal Content */
 .modal-content {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+  height: 90%;
+  overflow: scroll;
 }
 
-/* The Close Button */
 .close {
   color: #aaaaaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
+}
+
+.close-button {
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 5px; 
+  padding: 0px 5px;
 }
 
 .close:hover,
@@ -48,102 +54,837 @@ body {font-family: Arial, Helvetica, sans-serif;}
   cursor: pointer;
 }
 </style>
+<script>
+    window.onload = function () {
+        var modal1 = document.getElementById("m1");
+        var btn1 = document.getElementById("m1-button");
+        var span1 = document.getElementById("close1");
+
+        btn1.onclick = function() {
+          modal1.style.display = "block";
+        }
+        span1.onclick = function() {
+          modal1.style.display = "none";
+        }
+        window.onclick = function(event) {
+        if (event.target == modal1) {
+            modal1.style.display = "none";
+        }
+        }
+
+        var modal2 = document.getElementById("m2");
+        var btn2 = document.getElementById("m2-button");
+        var span2 = document.getElementById("close2");
+        btn2.onclick = function() {
+          modal2.style.display = "block";
+        }
+        span2.onclick = function() {
+          modal2.style.display = "none";
+        }
+        window.onclick = function(event) {
+        if (event.target == modal2) {
+            modal2.style.display = "none";
+        }
+        }
+
+        var modal3 = document.getElementById("m3");
+        var btn3 = document.getElementById("m3-button");
+        var span3 = document.getElementById("close3");
+        btn3.onclick = function() {
+          modal3.style.display = "block";
+        }
+        span3.onclick = function() {
+          modal3.style.display = "none";
+        }
+        window.onclick = function(event) {
+        if (event.target == modal3) {
+            modal3.style.display = "none";
+        }
+        }
+
+        var modal4 = document.getElementById("m4");
+        var btn4 = document.getElementById("m4-button");
+        var span4 = document.getElementById("close4");
+        btn4.onclick = function() {
+          modal4.style.display = "block";
+        }
+        span4.onclick = function() {
+          modal4.style.display = "none";
+        }
+        window.onclick = function(event) {
+        if (event.target == modal4) {
+            modal4.style.display = "none";
+        }
+        }
+
+        var modal5 = document.getElementById("m5");
+        var btn5 = document.getElementById("m5-button");
+        var span5 = document.getElementById("close5");
+        btn5.onclick = function() {
+          modal5.style.display = "block";
+        }
+        span5.onclick = function() {
+          modal5.style.display = "none";
+        }
+        window.onclick = function(event) {
+        if (event.target == modal5) {
+            modal5.style.display = "none";
+        }
+        }
+
+        var modal6 = document.getElementById("m6");
+        var btn6 = document.getElementById("m6-button");
+        var span6 = document.getElementById("close6");
+        btn6.onclick = function() {
+          modal6.style.display = "block";
+        }
+        span6.onclick = function() {
+          modal6.style.display = "none";
+        }
+        window.onclick = function(event) {
+        if (event.target == modal6) {
+            modal6.style.display = "none";
+        }
+        }
+
+        var modal7 = document.getElementById("m7");
+        var btn7 = document.getElementById("m7-button");
+        var span7 = document.getElementById("close7");
+        btn7.onclick = function() {
+          modal7.style.display = "block";
+        }
+        span7.onclick = function() {
+          modal7.style.display = "none";
+        }
+        window.onclick = function(event) {
+        if (event.target == modal7) {
+            modal7.style.display = "none";
+        }
+        }
+
+        var modal8 = document.getElementById("m8");
+        var btn8 = document.getElementById("m8-button");
+        var span8 = document.getElementById("close5");
+        btn8.onclick = function() {
+          modal8.style.display = "block";
+        }
+        span8.onclick = function() {
+          modal8.style.display = "none";
+        }
+        window.onclick = function(event) {
+        if (event.target == modal5) {
+            modal8.style.display = "none";
+        }
+        }
+
+        var modal9 = document.getElementById("m9");
+        var btn9 = document.getElementById("m9-button");
+        var span9 = document.getElementById("close9");
+        btn9.onclick = function() {
+          modal9.style.display = "block";
+        }
+        span9.onclick = function() {
+          modal9.style.display = "none";
+        }
+        window.onclick = function(event) {
+        if (event.target == modal9) {
+            modal9.style.display = "none";
+        }
+        }
+
+        var modal10 = document.getElementById("m10");
+        var btn10 = document.getElementById("m10-button");
+        var span10 = document.getElementById("close10");
+        btn10.onclick = function() {
+          modal10.style.display = "block";
+        }
+        span10.onclick = function() {
+          modal10.style.display = "none";
+        }
+        window.onclick = function(event) {
+        if (event.target == modal10) {
+            modal10.style.display = "none";
+        }
+        }
+    }
+</script>
 </head>
+
+<!-- TODO: make different modal and mybtn's for different popups! -->
 <body>
-<div>
-    <h2>Modal Example</h2>
-    <!-- homepage content 1 -->
-    <div style="display: flex; flex-direction: row;">
-        <div class="embed-container">
-            <iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Reported Massacres Atrocities and Crimes" src="//brown.maps.arcgis.com/apps/Embed/index.html?webmap=dbb02ab5879c40438870ba4f498c095a&extent=59.7597,5.46,146.5956,46.9333&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=light">
-            </iframe>
+  <div style="display: flex; flex-direction: column; gap: 20px; margin: 50px 0px 0px">
+    <div style="display: flex; flex-direction: column; gap: 0px; width: 100%;">
+      <div style="display: flex; flex-direction: row; gap: 0px; height: 15vh; width: 100vw;">
+        <div style="max-width: 100%; overflow: hidden; height: 100%; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+          <img style="flex: 1 1 0; align-self: stretch" src="https://scalar.usc.edu/works/the-long-road-to-atlanta/media/RailroadWorkers.png" alt="A group of Central Pacific Railroad workers strike in 1867"/> 
+          <img style="flex: 1 1 0; align-self: stretch" src="https://scalar.usc.edu/works/the-long-road-to-atlanta/media/BlackPantherVigil.jpeg" alt="Highschool students attend a funeral for Bobby Hutton, a 16-year-old Black Panther"/> 
+          <img style="flex: 1 1 0; align-self: stretch" src="https://scalar.usc.edu/works/the-long-road-to-atlanta/media/CorkyLeePhoto.jpeg" alt="Students protest US imperialism in 1970"/>
+          <img style="flex: 1 1 0; align-self: stretch" src="https://scalar.usc.edu/works/the-long-road-to-atlanta/media/HawaiiLand.jpeg" alt="People of all ages protest evictions in Kalama Valley, Hawai'i"/> 
+          <img style="flex: 1 1 0; align-self: stretch" src="https://scalar.usc.edu/works/the-long-road-to-atlanta/media/GarmentWorkers.png" alt="1982 NYC Garment Workers Strike" /> 
+          <img style="flex: 1 1 0; align-self: stretch" src="https://scalar.usc.edu/works/the-long-road-to-atlanta/media/NoHistoryNoSelf.jpeg" alt="Students go on hunger strike demanding ethnic studies, a sign saying No History No Self is in foreground."/> 
+          <img style="flex: 1 1 0; align-self: stretch" src="https://scalar.usc.edu/works/the-long-road-to-atlanta/media/Sarath.jpeg" alt="SEAFN protests the deportations of Southeast Asian refugees"/> 
         </div>
-        <!-- Trigger/Open The Modal -->
-        <button id="myBtn">Open Modal</button>
+        <div style="width: min-content;">
+          <button id="m1-button" style="font: 'Montserrat', sans-serif !important; color: #304C77; font-size: 16px; background-image: radial-gradient(white, #E9EDF2, #D9E4F4); height: 15vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 15px; border: 0px;"><img style="width: 5vw;" src="https://scalar.usc.edu/works/the-long-road-to-atlanta/media/Lotus.png" />Image Details
+          </button>
+        </div>
+      </div>
+    </div>
+    <div style="padding: 0px 15px; display: flex; flex-direction: row; align-items: flex-end;">
+      <h2 style="margin: 0px; padding: 0px 10px 0px 0px;" dir="ltr"><b id="docs-internal-guid-171af2e2-7fff-698e-5b44-7a3c9af9100c">THE LONG ROAD TO ATLANTA</b>
+      </h2>
+      <h2 style="margin: 0px; font-weight: normal" dir="ltr"><b id="docs-internal-guid-171af2e2-7fff-698e-5b44-7a3c9af9100c">Mapping Anti-Asian Violence Across Time, Space, and Institutions</b>
+      </h2>
+    </div>
+    <div style="display: flex; flex-direction: row; gap: 30px; padding-left: 15px;">
+      <div style="display: flex; width:min-content; flex-direction: column; gap: 15px;">
+        <h3>The Massacres We Forgot</h3>
+        <p>The massacre of six Asian women in Atlanta was startling but not new. This map opens our inquiry into the nature of anti-Asian violence across the American empire with twenty-six massacres at home and abroad. </p>        
+        <button id="m2-button" style="font: 'Montserrat', sans-serif !important; color: #304C77; font-size: 16px; background-image: radial-gradient(white, #E9EDF2, #D9E4F4); width: 20vw; height: 20vw;  display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 15px; border: 0px;"><img style="width: 8vw;" src="https://scalar.usc.edu/works/the-long-road-to-atlanta/media/Lotus.png" />What&#39;s here
+        </button>
+      </div>
+      <div class="embed-container">
+        <iframe style="width: 78vw; height: 80vh;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Vigilante Violence- At Home and Abroad" src="//brown.maps.arcgis.com/apps/Embed/index.html?webmap=87ec8d5231bf4ce9a3a04d122282ca71&amp;extent=18.4232,-39.5702,180,50.2345&amp;zoom=true&amp;previewImage=false&amp;scale=true&amp;legendlayers=true&amp;disable_scroll=true&amp;theme=light">
+        </iframe>
+      </div>
+    </div>
+    <div style="display: flex; flex-direction: row; width: 100%; margin: 50px 30px;">
+      <div style="display: flex; flex-direction: column; flex: 80; gap: 15px;">
+        <h2 style="color: #A0B5D2">Maps
+        </h2>
+        <div style="display: flex; flex-direction: row; border: 0px solid black"><img style="height:15vw;" src="https://scalar.usc.edu/works/the-long-road-to-atlanta/media/ViolenceOfEmpireThumbnail.jpg?t=1696449997765" />
+          <div style="display: flex; flex-direction: column; gap: 10px; padding: 15px">
+            <h2>VIOLENCE OF EMPIRE
+            </h2>
+            <h3>&quot;Blood in the American Lake&quot;
+            </h3>
+            <p>Violence against Asians has been an ongoing feature of American history. We can&rsquo;t understand the massacre of Korean massage workers in Atlanta unless we understand American violence in Asia. Before Asians arrived in&nbsp; America, Americans came to the Pacific and Asia in search of goods and markets, souls to save, and bodies to exploit. &nbsp; Since 1814, when American gunboats landed on Nuku Hiva in the Western Pacific, there has not been a twenty-year period in which Americans have not been at war...&nbsp;
+            </p>
+            <h4><a style="border: 1px solid red; border-radius: 5px; color: red; padding: 5px; text-decoration: none; " href="https://scalar.usc.edu/works/the-long-road-to-atlanta/blood-in-the-american-lake-the-violence-of-empire">See Map &gt;</a>
+            </h4>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: row; border: 0px solid black"><img style="height:15vw;" src="https://scalar.usc.edu/works/the-long-road-to-atlanta/media/ViolenceOfRacialStateThumbnail.jpg" />
+          <div style="display: flex; flex-direction: column; gap: 10px; padding: 15px">
+            <h2>VIOLENCE OF THE RACIAL STATE
+            </h2>
+            <h3>&quot;A Race So Different&quot;
+            </h3>
+            <p>Donald Trump&#39;s resurrection of old libels accusing Asians of undermining the nation&#39;s health and security puts him late (but not last) in the long line of elected officeholders who have waved the red flag of xenophobia against Asian Americans over the past two centuries.&nbsp; Since colonial times, governing bodies, from the village meeting to the Federal government, have codified the social practices of &ldquo;race,&quot; defining its various meanings and memberships and distributing rights, privileges, obligations, and...
+            </p>
+            <h4><a style="border: 1px solid red; border-radius: 5px; color: red; padding: 5px; text-decoration: none; " href="a-race-so-different-asians-and-the-racial-state">See Map &gt;</a>
+            </h4>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: row; border: 0px solid black"><img style="height:15vw;" src="https://scalar.usc.edu/works/the-long-road-to-atlanta/media/VigilanteViolenceThumbnail.jpg?t=1696450099705" />
+          <div style="display: flex; flex-direction: column; gap: 10px; padding: 15px">
+            <h2>VIGILANTE VIOLENCE
+            </h2>
+            <h3>&quot;I killed a Jap&quot;
+            </h3>
+            <p>Asians are the designated outsiders on America&rsquo;s racial terrain. Whether cast as unassimilable &quot;coolie&quot; labor or as &ldquo;White adjacent&rdquo; model minorities, Asians are indelibly marked as aliens whose very presence threatens the well-being of &ldquo;real&rdquo; Americans. Much of the physical violence against various Asian and Pacific Islander people in the United States has been enacted by privatecitizens acting, individually and in groups, to rid the United States of this imagined menace.&nbsp;This map shows the pattern...
+            </p>
+            <h4><a style="border: 1px solid red; border-radius: 5px; color: red; padding: 5px; text-decoration: none; " href="i-killed-a-jap-viligante-violence">See Map &gt;</a>
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; flex: 20; gap:15px;padding: 0px 0px 0px 50px;">
+        <h2 style="color: #A0B5D2">Interludes
+        </h2>
+        <button id="m3-button" style="font: 'Montserrat', sans-serif !important; color: #304C77; font-size: 16px; background-image: radial-gradient(white, #E9EDF2, #D9E4F4); width: 20vw; height: 10vw;  display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 15px; border: 0px;">
+          <br /><img style="width: 8vw; color: #304C77; font-size: 16px;" src="https://scalar.usc.edu/works/the-long-road-to-atlanta/media/Lotus.png" />
+          <br />What is Asian America?
+          <br />
+        </button>
+        <br />
+        <button id="m4-button" style="font: 'Montserrat', sans-serif !important; color: #304C77; font-size: 16px; background-image: radial-gradient(white, #E9EDF2, #D9E4F4); width: 20vw; height: 10vw;  display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 15px; border: 0px;">
+          <br /><img style="width: 8vw;" src="https://scalar.usc.edu/works/the-long-road-to-atlanta/media/Lotus.png" />
+          <br />Four Things to Know
+          <br />
+        </button>
+        <br />
+        <button id="m5-button" style="font: 'Montserrat', sans-serif !important; color: #304C77; font-size: 16px; background-image: radial-gradient(white, #E9EDF2, #D9E4F4); width: 20vw; height: 10vw;  display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 15px; border: 0px;">
+          <br /><img style="width: 8vw;" src="https://scalar.usc.edu/works/the-long-road-to-atlanta/media/Lotus.png" />
+          <br />Never Your Model Minority
+          <br />
+        </button>
+        <button id="m6-button" style="color: #304C77; font-size: 16px; background-image: radial-gradient(white, #E9EDF2, #D9E4F4); width: 20vw; height: 10vw;  display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 15px; border: 0px;">
+          <br /><img style="width: 8vw;" src="https://scalar.usc.edu/works/the-long-road-to-atlanta/media/Lotus.png" />
+          <br />Some Dates to Remember
+          <br />
+        </button>
+      </div>
     </div>
 
-</div>
+    <div style="display: flex; flex-direction: row; width: 100%; margin: 50px 30px;">
+      <div style="display: flex; flex-direction: column; flex: 80; gap: 15px;">
+       <h2 style="color: #A0B5D2"></h2>>Re/Sources</h2>
+       <div>
+        <h3>General</h3>
+        <div>
+          <h4>Websites</h4>
+          <p>https://www.zinnedproject.org/materials/asian-americans-and-moments-in-peoples-history/#Ibrahim_Chowdry
+            https://americanhistory.si.edu/topics/asian-pacific-american-history
+            https://www.asian-nation.org/
+            https://www.saada.org/
+            https://www.census.gov/about/partners/cic/resources/data-links/asian.html
+          </p>
+        </div>
+        <div>
+          <h4>Books</h4>
+          <p>
+            Kurashige, Scott. The Shifting Grounds of Race: Black and Japanese Americans in the Making of Multi-ethnic Los Angeles, Princeton 2008
+            Lee, Erika. America for Americans : A History of Xenophobia in the United States. First edition., Basic Books, 2019.                                                                                                                                                                   
+            Lee, Robert G. Orientals: Asian Americans in Popular Culture. Temple University Press, 1999.   
+            Lee, Shelley Sang-Hee. A New History of Asian America. Routledge, Taylor & Francis Group, 2014.                                                                                                                                                                                Rana, Junaid Akram. Terrifying Muslims : Race and Labor in the South Asian Diaspora. Duke University Press, 2011.
+            Schlund-Vials, Cathy J., et al. Keywords for Asian American Studies. New York University Press, 2015.
+            Tang, Eric. Unsettled : Cambodian Refugees in the New York City Hyperghetto. Temple University Press, 2015.      
+            Jack Tchen and Dylan Yeats, Yellow Peril! An Archive of Anti-Asian Fear, Verso, 2014.
+            Wu, Ellen D. The Color of Success : Asian Americans and the Origins of the Model Minority. Princeton University Press, 2014.        
+          </p>
+        </div>
+        <div>
+          <h4>Films</h4>
+          <p>
+            Osaki, Jon, et al. Not Your Model Minority. San Francisco, California, USA: New Day Films, 2022. 
+            Tajima-Pena, Renee., Quynh. Thai, and Victor. Wong. My America, or Honk If You Love Buddha. Los Angeles, CA: National Asian American Telecommunications Association and Independent Television Service, 1996. </p>
+        </div>
+        <div>
+          <h4>Organizations</h4>
+          <p>
+            AAPI Data
+            AAPI Equity Alliance
+            Asian Americans Advancing JusticeAACA Boston
+            Asian American Advocacy Fund
+            Asian American Federation
+            Asian Community Development Corporation
+            Chinese for Affirmative Action
+            Chinese Progressive Association - Boston 
+            Chinese Progressive Association (NYC)
+            Chinese Progressive Association (SF)
+            Indian American Impact
+            National Council of Asian Pacific Americans (NCAPA)
+            Member Organizations - NCAPA
+            South Asian Network
+            SEARAC (Southeast Asian Resource Action Center)
+            South Asian Americans Leading Together
+            Desis Rising Up and Moving (DRUM)
+            <br/>
+            *Inclusion on this list does not imply endorsement
+          </p>
+        </div>
+       </div>
+       <div>
+        <h3>Empire</h3>
+        <div>
+          <h4>Websites</h4>
+          <p>Legacies of War                                                                                                                                                           
+            Brown University Watson Institute, Cost of War Project   
+          </p>
+        </div>
+        <div>
+          <h4>Books</h4>
+          <p>
+            Shaw, Angel Velasco., and Luis Francia. Vestiges of War : The Philippine-American War and the Aftermath of an Imperial Dream, 1899-1999. New York University Press, 2002.                             
+Osorio, Jon Kamakawiwoʻole. Dismembering Lāhui : A History of the Hawaiian Nation to 1887. University of Hawaiʻi Press, 2002.                                                                                                               Saranillio, Dean Itsuji. Unsustainable Empire : Alternative Histories of Hawaiʻi Statehood. Duke University Press, 2018.                                                                                                                                          Horne, Gerald. The White Pacific : U.S. Imperialism and Black Slavery in the South Seas after the Civil War. University of Hawai’i Press, 2007.                                                                                                        
+Johnson, Akemi. Night in the American Village : Women in the Shadow of the U.S. Military Bases in Okinawa. The New Press, 2019.                                                                                                                             Yuh, Ji-Yeon. Beyond the Shadow of Camptown : Korean Military Brides in America. New York University Press, 2002.  
+Dower, John W. War Without Mercy : Race and Power in the Pacific War. Pantheon Books, 1993.     
+Turse, Nick. Kill Anything That Moves: The Real American War in Vietnam.Metropolitan/Henry Holt 2014. 
+William Shawcross, Sideshow: Nixon, Kissinger and the Destruction of Cambodia, 1979.                                                                                                                                                          
+                                                                                                                                                            
+</p>
+        </div>
+        <div>
+          <h4>Films</h4>
+          <p>
+            Puhipau et al. Act of War : The Overthrow of the Hawaiian Nation [with Audio Description]. Na Maka O Ka’Aina, 1993.                                                                                                                                                            Raval, PJ, et al. Call Her Ganda. Breaking Glass Pictures, 2019. 
+Griggers, Camilla, and Sari Raissa Lluch Dalena. Memories of a Forgotten War. New York, NY: Third World Newsreel, 2002. Film.
+Rachel Rivera and Michele Zaccheo, Sin City Diary, New York, NY: Distributed by Women Make Movies, 1992.
+Mikami, Chie, Shigeki Kinoshita, and Yoshiko Hashimoto. The Targeted Island : A Shield Against Storms. Hamden, CT: ZAKKA Films, 2017. Film.
+Barak Goodman. My Lai. Ark Media for the American Experience, 2010. 
+        </div>
+        <div>
+          <h4>Organizations</h4>
+          <p>
+            Aina Momona
+            Alu Like
+            Council for Native Hawaiian Advancement
+            Native Hawaiian Education Association
+            Pōhāhā I Ka Lani
+            Nation of Hawaii            
+            <br/>
+            *Inclusion on this list does not imply endorsement
+          </p>
+        </div>
+       </div>
+       <div>
+        <h3>The Racial State
+        </h3>
+        <div>
+          <h4>Websites</h4>
+          <p>Racial Identity and American Citizenship in the Court | Lesson plan curriculum
+            Resources on Deportation of Vietnamese Immigrants Who Entered the U.S. Before 1995 | Advancing Justice
+            Latest Data: Immigration and Customs Enforcement Removals
+            Immigration and Relocation in U.S. History | Classroom Materials at the Library of Congress
+            Immigration History
+            Densho: Japanese American Legacy Project   </p>
+        </div>
+        <div>
+          <h4>Books</h4>
+          <p>
+            Ngai, Mae M. Impossible Subjects : Illegal Aliens and the Making of Modern America. Princeton University Press, 2004                                                                                                                                                                                                                                        
+Hansen, Arthur A., and Lane Ryo Hirabayashi. Barbed Voices: Oral History, Resistance, and the World War II Japanese American Social Disaster. University Press of Colorado, 2018.                                                                                                                                     
+Vivek Bald et al. The Sun Never Sets: South Asian Migrants in an Age of U.S. Power. NYU Press, 2013.                                                                                                                                                                             Maira, Sunaina. Missing: Youth, Citizenship, and Empire after 9/11. Duke University Press, 2009.    
+Espiritu, Yen Le. Body Counts : the Vietnam War and Militarized Refuge(es). University of California Press, 2014.                                                                                                                                                                         
+</p>
+        </div>
+        <div>
+          <h4>Films</h4>
+          <p>
+            Aroy, Marissa, et al. The Delano Manongs : Forgotten Heroes of the United Farm Workers Movement. Media Factory, 2014.                                                                                                                                            Aderer, Konrad., et al. Enemy Alien. TWN, Third World Newsreel, 2011.                                               
+            Aderer, Konrad, and Miao Chen. Resistance at Tule Lake. Academic Video Online, Third World Newsreel, 2018.                                                                                                                                                     Grabias, David., et al. Sentenced Home. Feature-length version. Distributed by Center for Asian American Media, 2006.
+            Lew, Jennie F., and Yvonne Y. Lee. Separate Lives, Broken Dreams : The Saga of Chinese Immigration. San Francisco, CA: Center for Asian American Media, 1994. 
+            Abe, Frank. et al. Conscience and the Constitution. Hohokus, NJ: Transit Media, 2000. 
+        </div>
+       </div>
+       <div>
+        <h3>Vigilante Violence
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
+        </h3>
+        <div>
+          <h4>Websites</h4>
+          <p>The Federal Response to Anti-Asian Racism in the United States | U.S. Commission on Civil Rights
+            Chinese in Pacific Northwest Research Committee                                                                                
+            Mapping Islamophobia                                                                                                                                             
+            Stop AAPI Hate!                                                                                                                                                       
+            Council on American-Islamic Relations (CAIR)                                                                                                   
+            UCSB Ctr. for the Study of Hate and Extremism   </p>
+        </div>
+        <div>
+          <h4>Books</h4>
+          <p>
+            Lew-Williams, Beth. The Chinese Must Go: Violence, Exclusion, and the Making of the Alien in America. Harvard University Press, 2018.                                                                                                
+Pfaelzer, Jean. Driven Out : The Forgotten War Against Chinese Americans. 1st ed., Random House, 2007.                                                                                                                                                          Baldoz, Rick. The Third Asiatic Invasion: Empire and Migration in Filipino America, 1898-1946. New York University Press, 2011.                                                                                                                                  Shah, Nayan. Stranger Intimacy: Contesting Race, Sexuality, and the Law in the North American West. University of California Press, 2011.          </p>
+        </div>
+        <div>
+          <h4>Films</h4>
+          <p>
+            Siegel, Taggart, Kati Johnston, and Edward James Olmos. Blue Collar and Buddha. San Francisco, CA: Center for Asian American Media, 1988.
+Kim-Gibson, Dai Sil, Charles Burnett, and Stephen James Taylor. Wet Sand Voices from L.A. San Francisco, CA: Center for Asian American Media, 2004. 
+Choy, Christine., Elaine H. Kim, and Dai Sil. Kim-Gibson. Sa-i-Gu. San Francisco, Calif: National Asian American Telecommunications Association, 1995.
+        </div>
+        <div>
+          <h4>
+            Organizations
+          </h4>
+          <p>
+            Stop AAPI Hate
+            CAAAV
+            <br/>
+            *Inclusion on this list does not imply endorsement
+          </p>
+        </div>
+       </div>
+      </div>
+      <div style="display: flex; flex-direction: column; flex: 20; gap:15px;padding: 0px 0px 0px 50px;">
+        <h2 style="color: #A0B5D2">Credits and Acknowledgements
+        </h2>
+        <p>
+          Robert G. Lee, Project Director                                                                                                                       
+Catherine Coggins, Curator                                                                                                                              
+Elizabeth Mathews, Curator                                                                                                                                  
+Riley Stenehjem, Curator    
+Victoria Xu, Designer 
+                                                                                                                                    
+Our work has been inspired by Professor Monica Martinez'  Mapping Violence, which visualizes anti-Mexican violence in Texas between 1900 and 1930.  Professor Susan Smulyan has been a mentor and guide into the realm of Public Humanities.  Professor Roopika Risam gave us early encouragement and advice.
 
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
+We are deeply grateful for the administrative support of Sabina Griffin at Brown University's  John Nicholas Brown Center for Public Humanities and for the technical expertise of Professor Steven Lubar, Ashley Champagne, and the staff of the Center for Digital Humanities who have made this project possible.
+
+We welcome your comments and suggestions for making this site more complete and useful. Reach us at  thelongroadtoatlanta@gmail.com .
+
+        </p>
+      </div>
+    </div>
+    <div id="m1" class="modal">
+      <div class="modal-content">
+        <div style="position: sticky; top: 0; display: flex; flex-direction: row; justify-content: right; align-items: flex-end;">
+          <button id="close1" class="close-button">&times;
+          </button>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 50px; padding: 0px 70px 100px;">
+          <div style="display: flex; flex-direction: column; gap: 30px;">
+            <h2 class="modal-title">Image Details
+            </h2>
+            <div style="display: flex; flex-direction: row; gap: 20px;"><img style="width: 50vw;" src="https://scalar.usc.edu/works/the-long-road-to-atlanta/media/RailroadWorkers.png" />
+              <div style="display: flex; flex-direction: column; gap: 10px; padding-top: 20px;">
+                <h3 classname="modal-header">1867 Central Pacific Railroad strike
+                </h3>
+                <p>In June,1867, thousands of Chinese railroad workers in the Sierra Nevada mountains struck the Central Pacific Railroad for a week demanding equal pay and safer working conditions.&nbsp;
+                </p>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: row; gap: 20px;"><img style="width: 50vw;" src="https://scalar.usc.edu/works/the-long-road-to-atlanta/media/BlackPantherVigil.jpeg" />
+              <div style="display: flex; flex-direction: column; gap: 10px; padding-top: 20px;">
+                <h3 classname="modal-header">1968 Oakland Vigil for Bobby Hutton
+                </h3>
+                <p>1968 Oakland HS students participate in the funeral services of 16 year old Black Panther Bobby Hutton killed by Oakland Police
+                  <br />Photo credit: Nikki Arai
+                </p>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: row; gap: 20px;"><img style="width: 50vw;" src="https://scalar.usc.edu/works/the-long-road-to-atlanta/media/CorkyLeePhoto.jpeg" />
+              <div style="display: flex; flex-direction: column; gap: 10px; padding-top: 20px;">
+                <h3 classname="modal-header">1970 Protests Against Imperialism
+                </h3>
+                <p>Asian Americans Protesting American Imperialism, 1970.
+                  <br />Photo courtesy of Corky Lee estate
+                </p>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: row; gap: 20px;"><img style="width: 50vw;" src="https://scalar.usc.edu/works/the-long-road-to-atlanta/media/HawaiiLand.jpeg" />
+              <div style="display: flex; flex-direction: column; gap: 10px; padding-top: 20px;">
+                <h3 classname="modal-header">1972 Kalam Valley protests against eviction - Hawaii sovereignty movement
+                </h3>
+                <p>1972 Hawaii sovereignty movement Kalam Valley protests against eviction of native Hawaiian farmers by developers.
+                  <br />Photo credit: Nikki Arai
+                </p>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: row; gap: 20px;"><img style="width: 50vw;" src="https://scalar.usc.edu/works/the-long-road-to-atlanta/media/GarmentWorkers.png" />
+              <div style="display: flex; flex-direction: column; gap: 10px; padding-top: 20px;">
+                <h3 classname="modal-header">1982 NYC Garment Workers Strike
+                </h3>
+                <p>1982 NYC Garment Workers Strike
+                  <br />Photo courtesy of Corky Lee estate
+                </p>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: row; gap: 20px;"><img style="width: 50vw;" src="https://scalar.usc.edu/works/the-long-road-to-atlanta/media/NoHistoryNoSelf.jpeg" />
+              <div style="display: flex; flex-direction: column; gap: 10px; padding-top: 20px;">
+                <h3 classname="modal-header">2016 Ethnic Studies Hunger Strike
+                </h3>
+                <p>Ethnic Studies Hunger Strike at SF State in 2016.
+                  <br />Photo by Melissa Minton via Wikimedia Creative Commons
+                </p>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: row; gap: 20px;"><img style="width: 50vw;" src="https://scalar.usc.edu/works/the-long-road-to-atlanta/media/Sarath.jpeg" />
+              <div style="display: flex; flex-direction: column; gap: 10px; padding-top: 20px;">
+                <h3 classname="modal-header">2019 SEAFN protests deportations
+                </h3>
+                <p>2019 Southeast Asian Freedom Network protesting deportations of Southeast Asians.
+                  <br />PhotoCredit: Salgu WIssmathCopyright: &copy; 2019 Salgu Wissmath
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="m2" class="modal">
+      <div class="modal-content">
+        <div style="position: sticky; top: 0; display: flex; flex-direction: row; justify-content: right; align-items: flex-end;">
+          <button id="close2" class="close-button">&times;
+          </button>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 50px; padding: 0px 70px 100px;">
+          <div style="display: flex; flex-direction: column; gap: 30px;">
+            <h2 class="modal-title">What&#39;s here?
+            </h2>
+            <div style="background-color: #DBE5F4; padding: 30px;">
+              <h3>Language of Violence, a pattern through history:</h3>
+              <div style="padding:20px;">
+                <p>“I want no prisoners. I wish you to kill and burn; the more you kill and burn, the better it will please me….” 
+                <br/>
+                -Jacob Smith, Brigadier General, US Army, Samar Island, the Philippines, 1900.  
+                <br/><br/>
+                “Nail that coonskin to the wall! “ 
+                <br/>
+                -Lyndon B. Johnson, President, Cam Ranh Bay, Vietnam, 1967.  
+                <br/><br/>
+                “The damned Hindus and boat people own everything.” 
+                <br/>
+                -Patrick Purdy, mass murderer, Stockton, California, 1989.
+                <br/><br/>
+                “I am going to kill all Asians.” 
+                <br/>
+                -Robert Aaron Long, mass murderer, Atlanta, Georgia, 2021. 
+                </p>
+              </div>
+            </div>
+            <div>
+              <div>
+                <h3 style="color: #A0B5D2">Maps
+                </h3>
+                <p><b>Violence of Empire Map</b> shows the violence of the American empire in Asia and the Pacific.&nbsp; A comprehensive map of the history of the Empire is followed by three sub-maps: one showing wars, invasions, and punitive expeditions, the second showing conquests and colonies, and the third showing occupations and garrisons.&nbsp;&nbsp;&nbsp;
+                </p>
+                <p><b>Asians &amp; The Racial State Map</b> shows the patterns of state violence against Asians and Pacific Islanders in the United States. A comprehensive map is followed by a sub-map that shows immigration restrictions and bars to citizenship.&nbsp; A second sub-map shows legal disenfranchisement and economic and social discrimination. A third sub-map shows incarceration, surveillance, and deportation.&nbsp;&nbsp;
+                </p>
+                <p><b>Vigilante Violence Map</b> shows the patterns of vigilante violence against Asian Americans and Pacific Islanders in the United States. By vigilante violence, we refer to the murders, assaults, and attacks on Asian and Pacific Islander people by non-state actors in the United States. A sub-map of massacres (in which four or more individuals died) follows a comprehensive map.&nbsp; A second sub-map shows attacks on Asian communities.&nbsp; The third sub-map shows assaults and murders of Asian individuals.
+                </p>
+              </div>
+              <div>
+                <h3 style="color: #A0B5D2">Labels and Notes
+                </h3>
+                <p>Click on each data point on a map to see a description of the event with a reference.&nbsp;
+                </p>
+              </div>
+              <div>
+                <h3 style="color: #A0B5D2">Interludes
+                </h3>
+                <p>Interludes, like this one, provide introductions and commentaries.
+                </p>
+              </div>
+              <div>
+                <h3 style="color: #A0B5D2">Sources/resources
+                </h3>
+                <p>Find a list of books, films, websites, and organizations for further reading, teaching, and organizing.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="m3" class="modal">
+      <div class="modal-content">
+        <div style="position: sticky; top: 0; display: flex; flex-direction: row; justify-content: right; align-items: flex-end;">
+          <button id="close3" class="close-button">&times;
+          </button>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 50px; padding: 0px 70px 100px;">
+          <div style="display: flex; flex-direction: column; gap: 30px;">
+            <h2 class="modal-title">What is Asian America?
+            </h2>
+            <div>
+            <p>The notion of an &ldquo;Oriental&rdquo; race is a product of Euro-American colonial imagination.&nbsp; In fact, the vast diversity of physical characteristics, language, religion, and cultural practice among the peoples designated as &ldquo;Asian&rdquo; undermines the very conceit of race as a &ldquo;natural&rdquo; category. &nbsp; Nevertheless, the fiction of race remains the dominant ideology of inequality and domination and central to the American way of life and death.&nbsp;&nbsp;
+            </p>
+            <p>The term &ldquo;Asian American&rdquo; was invented by Chinese, Japanese and Filipino students during the 1968 Third World Student Strike at San Francisco State College.&nbsp; &ldquo;Asian American&rdquo; expressed unity across disparate lost community histories and solidarity with Asian, African, Latino, and Indigenous peoples fighting for liberation everywhere and rejection of the colonizer&rsquo;s Oriental..&nbsp; Over time, however, &ldquo;Asian American&rdquo; has been co-opted by the state into yet another category of America&rsquo;s racial hierarchy, largely divorced from its radical origins.&nbsp;
+            </p>
+            </div>
+            <div style="display: flex; flex-direction: row; gap: 0px;"><img alt="" src="" /> <img alt="" src="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="m4" class="modal">
+      <div class="modal-content" style="height: auto; overflow: hidden;"> 
+        <div style="position: sticky; top: 0; display: flex; flex-direction: row; justify-content: right; align-items: flex-end;">
+          <button id="close4" class="close-button">&times;
+          </button>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 50px; padding: 0px 70px 20px;">
+          <div style="display: flex; flex-direction: column; gap: 30px;">
+            <h2 class="modal-title">Four Things to Know About Asian America
+            </h2>
+            <div>
+              <div>
+                <h3>1. More than you think
+                </h3>
+                <p>In 1960, there were fewer than 1 million Asians in America. In 2019, there were 23 million people of Asian descent in the United States.
+                </p>
+              </div>
+              <div>
+                <h3>2. Longer than you think
+                </h3>
+                <p>Most Asian families in the US have arrived since 1965, but Chinese and Filipino sailors, merchants, tradespersons, and servants established a thriving settlement in Mexico City in the 1560s.&nbsp; In the 1850s, Chinese made up about one-third of California&rsquo;s population.&nbsp;&nbsp;
+                </p>
+              </div>
+              <div>
+                <h3>3. From Everywhere to Everywhere
+                </h3>
+                <p>Asian Americans come from 43 countries in Asia and from countries in Africa, Latin America, the Caribbean, and Europe.&nbsp;&nbsp;Asians live in every state and territory in the U.S., from Guam to Maine.
+                </p>
+              </div>
+              <div>
+                <h3>4. Richer and Poorer
+                </h3>
+                <p>Asian Americans Have The Highest Poverty Rate of Any Racial Group in New York City.&nbsp;&nbsp;Taiwanese and Indian American families have the highest incomes of any racial or ethnic group in the US. Hmong, Cambodian, Bangladeshi, and Burmese Americans have the lowest incomes of any racial or ethnic groups in the US. Asian Americans have the widest income gaps among all racial groups in the U.S.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="m5" class="modal">
+      <div class="modal-content" style="height: auto; overflow: hidden;"> 
+        <div style="display: flex; flex-direction: row; justify-content: right; align-items: flex-end;">
+          <button id="close5" class="close-button">&times;
+          </button>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 0px; padding: 20px 70px 100px;">
+          <h2 class="modal-title">Never Your Model Minority
+          </h2>
+          <p>Despite the mass media depictions of Asians as wealthy suburbanites, most Asians in America are urban working-class people, cooks and servers, nurses, cab drivers, nail salon workers, garment workers, clerks, mom-and-pop shopkeepers, and their families. Seventy percent of Asian Americans in college attend two-year community colleges. Since the 1800s, the myth of cheap and docile Asian labor has been a means of controlling the white working class and policing blacks and other people of color.&nbsp; Nothing could be further from the truth.&nbsp; In&nbsp; 1867, thousands of striking Chinese railroad workers in the High Sierras demanded equal wages and working conditions with their white counterparts. Since then, Asians have been fighting exploitation, discrimination, and violence in the fields, factories, mines, and dockyards.&nbsp;
+          </p>
+          <div style="display: flex; flex-direction: row; gap: 10px;">
+            <div style="display:flex; flex-direction: column; gap: 0px;">
+              <img style="flex: 1 1 0; align-self: stretch" alt="1982 NYC Garment Workers Strike" src="https://scalar.usc.edu/works/the-long-road-to-atlanta/media/GarmentWorkers.png" />
+              <p>In 1867, Chinese railroad workers struck the the Central Pacific Railroad over wages and working conditions.</p>
+            </div>
+            <div style="display:flex; flex-direction: column; gap: 0px;">
+              <img style="flex: 1 1 0; align-self: stretch" alt="A group of Central Pacific Railroad workers strike in 1867" src="https://scalar.usc.edu/works/the-long-road-to-atlanta/media/RailroadWorkers.png" />
+              <p>In 1982 Chinese women garment workers strike in New York City.  Photo: courtesy of Corky Lee estate.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="m6" class="modal">
+      <div class="modal-content">
+        <div style="position: sticky; top: 0; display: flex; flex-direction: row; justify-content: right; align-items: flex-end;">
+          <button id="close6" class="close-button">&times;
+          </button>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 50px; padding: 20px 70px 100px;">
+          <h2 class="modal-title">Some Dates to Remember
+          </h2>
+          <div style="display: flex; flex-direction: column; gap: 20px;">
+            <div style="display: flex; flex-direction: row; gap: 10px;">
+              <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <h3 style="width: 150px; text-wrap: wrap;">Los Angeles Massacre</h3>
+                <h3>1871</h3>
+              </div>
+              <div style="text-wrap: wrap;">
+                <p>After an altercation among Chinese men in which a white man was accidentally shot, a mob of 500 white and Mexican men shot and lynched at least 19 Chinese residents of Los Angeles. 
+                </p>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: row; gap: 10px;">
+              <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <h3 style="width: 150px; text-wrap: wrap;">Page Act</h3>
+                <h3>1875</h3>
+              </div>
+              <div style="text-wrap: wrap;">
+                <p>Before the Chinese Exclusion Act of 1882, Asian women were effectively barred from entry to the United States by the Page Act based on the assumption that they were being trafficked as sex workers. All Asian women seeking admission were subject to invasive and humiliating interrogations to prove they were “of good moral character.” 
+                </p>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: row; gap: 10px;">
+              <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <h3 style="width: 150px; text-wrap: wrap;">Rock Springs Massacre</h3>
+                <h3>1885</h3>
+              </div>
+              <div style="text-wrap: wrap;">
+                <p>Welsh, Swedish, Irish, and Cornish immigrant miners under the banner of the Knights of Labor killed at least 28 Chinese coal miners and wounded at least another fifteen.  The white mob burned down seventy-eight Chinese houses and drove their residents into the high desert. </p>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: row; gap: 10px;">
+              <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <h3 style="width: 150px; text-wrap: wrap;">Overthrow of the Hawaiian Monarchy</h3>
+                <h3>1893</h3>
+              </div>
+              <div style="text-wrap: wrap;">
+                <p>After more than a half-century of political influence and economic dominance during which the indigenous Kanaka-Maoli people were decimated and dispossessed of their land, American planters and merchants organized a coup. They established a “Republic of Hawaii” with the goal of eventual annexation by the US.</p>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: row; gap: 10px;">
+              <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <h3 style="width: 150px; text-wrap: wrap;">Moro Crater Massacre</h3>
+                <h3>1903</h3>
+              </div>
+              <div style="text-wrap: wrap;">
+                <p>During the brutal suppression of resistance to the US colonization of the Philippines between 1900 and 1913, US soldiers killed over 1,000 Filipino Muslim men, women, and children in the Bud Dao volcano crater.
+                </p>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: row; gap: 10px;">
+              <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <h3 style="width: 150px; text-wrap: wrap;">Takao Ozawa v. United States, 260 U.S. 178 and United States v. Bhagat Singh Thind, 261 U.S. 204</h3>
+                <h3>1922-23</h3>
+              </div>
+              <div style="text-wrap: wrap;">
+                <p>In two successive and somewhat contradictory decisions, the Supreme Court declared persons of Japanese and Indian ancestry, like the Chinese before them, unassimilable and ineligible for naturalization.  
+                </p>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: row; gap: 10px;">
+              <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <h3 style="width: 150px; text-wrap: wrap;">Gong Lum v Rice</h3>
+                <h3>1927</h3>
+              </div>
+              <div style="text-wrap: wrap;">
+                <p>The US Supreme Court ruled that the American-born daughter of a Chinese immigrant was “colored” and thus subject to Mississippi's segregationist Jim Crow laws.</p>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: row; gap: 10px;">
+              <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <h3 style="width: 150px; text-wrap: wrap;">Executive Order 4099</h3>
+                <h3>1941</h3>
+              </div>
+              <div style="text-wrap: wrap;">
+                <p>Franklin Delano Roosevelt subjected 130,000 Japanese Americans living on the West Coast to incarceration without trial for the duration of the war against Japan.  Over 100,000 were American citizens, and several thousand others were Japanese immigrants to Latin American countries that the US held for potential exchanges with Japan. 
+                </p>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: row; gap: 10px;">
+              <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <h3 style="width: 150px; text-wrap: wrap;">No Gun Ri Massacre</h3>
+                <h3>1951</h3>
+              </div>
+              <div style="text-wrap: wrap;">
+                <p>During the Korean War, the US feared there might be infiltrators among the many thousands of uprooted civilians.  At No Gun Ri, US soldiers killed 400 Korean men, women, and children fleeing the fighting in their home districts. 
+                </p>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: row; gap: 10px;">
+              <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <h3 style="width: 150px; text-wrap: wrap;">My Lai Massacre</h3>
+                <h3>1968</h3>
+              </div>
+              <div style="text-wrap: wrap;">
+                <p> In what is known to Vietnamese as the Song My massacre,  American soldiers killed between 347 and 504 Vietnamese civilians, men, women, and children in the hamlet of My Lai.  American soldiers raped or gang raped at least 38 women and children as young as 13.   
+                </p>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: row; gap: 10px;">
+              <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <h3 style="width: 150px; text-wrap: wrap;">Cleveland School Massacre</h3>
+                <h3>1989</h3>
+              </div>
+              <div style="text-wrap: wrap;">
+                <p>A 24-year-old white racist who had expressed hatred of Asian immigrants shot and killed five and wounded thirty-two  Southeast Asian first and second graders in their schoolyard in Stockton.
+                </p>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: row; gap: 10px;">
+              <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <h3 style="width: 150px; text-wrap: wrap;">Sai-I-Gu</h3>
+                <h3>1992</h3>
+              </div>
+              <div style="text-wrap: wrap;">
+                <p>During the uprising touched off by the acquittal of the LAPD officers who beat black motorist Rodney King and the reduced sentence given to the Korean store owner Soon Du-ja in the shooting of Black teenager Latasha Harlins,  white, black, and Latino mobs looted and burned down over 2300 Korean-owned stores in Los Angeles.
+                </p>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: row; gap: 10px;">
+              <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <h3 style="width: 150px; text-wrap: wrap;">The Shock and Awe Bombing of Baghdad</h3>
+                <h3>2003</h3>
+              </div>
+              <div style="text-wrap: wrap;">
+                <p>The US began its war against Iraq with the massive bombing of Baghdad in March 2003.  Over 6,000 Iraqi civilians died in the first two weeks of the war. 
+                </p>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: row; gap: 10px;">
+              <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <h3 style="width: 150px; text-wrap: wrap;">Oak Creek Sikh Temple Massacre</h3>
+                <h3>2018</h3>
+              </div>
+              <div style="text-wrap: wrap;">
+                <p>A white racist shot and killed six worshippers in the Sikh temple in Oak Creek, Wisconsin.  A seventh shooting victim died of his wounds in 2020.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-
-</div>
-
-<script>
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-    console.log("hit1");
-
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    console.log("hit2");
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    console.log("hit3");
-
-    modal.style.display = "none";
-  }
-}
-</script>
-
 </body>
 </html>
 
-
-<!-- 
-<html> 
-<head></head>
-
-<body>
-<div style="display: flex; flexDirection: row; align-items: center; justify-content: center;">
-  <div>
-    <iframe style="width: 80vw; height:100vh" scrolling="no" marginheight="0" marginwidth="0" 
-    title="Reported Massacres Atrocities and Crimes" 
-    src="//brown.maps.arcgis.com/apps/Embed/index.html?webmap=dbb02ab5879c40438870ba4f498c095a&amp;extent=59.7597,5.46,146.5956,46.9333&amp;zoom=true&amp;previewImage=false&amp;scale=true&amp;disable_scroll=true&amp;theme=light" 
-    frameborder="0">
-    </iframe>
-  </div>
-  <div style="width: 20vw; height:50vh">
-    <button id="myBtn" style="width: 20vw;">Open Modal
-    </button>
-  </div>
-</div>
-<div style="width: 333px; height:333px; background-color: red;">
-  <p><a href="1871--los-angeles-massacre">link testing</a>
-  </p>
-</div>
-<div id="myModal" class="modal">
-  <div class="modal-content"><span class="close">&times;</span>
-    <p>Some text in the Modal..
-      <br />&nbsp;
-    </p>
-  </div>
-</div>
-
-<script>
-  var modal = document.getElementById("myModal"); var btn = document.getElementById("myBtn"); var span = document.getElementsByClassName("close")[0]; btn.onclick = function() {  modal.style.display = "block";<br />} span.onclick = function() { modal.style.display = "none";} window.onclick = function(event) { if (event.target == modal) { modal.style.display = "none"; }}</script>
-
-</body>
-</html> -->
